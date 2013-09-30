@@ -1,0 +1,17 @@
+{
+    "import" : [
+        {
+            "assign"    : "$id",
+            "statement" : "INSERT INTO test (somevar) VALUES (@somevar)"
+        },
+        {
+            "loop"      : "foreach (@somearray as $item)",
+            "statement" : "INSERT INTO test_items (id, name, value) VALUES ($id, $item@name, $item@value)"
+        }
+    ],
+
+    "clear" : [
+        "DELETE FROM test",
+        "DELETE FROM test_items"
+    ]
+}
