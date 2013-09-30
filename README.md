@@ -1,7 +1,7 @@
 json-sql-import
 ===============
 
-Small PHP command line tool to import JSON data into database tables using transformation rules.
+Small PHP command line tool to import JSON data into database tables using transformation rules (templated SQL queries).
 
 Usage
 -----
